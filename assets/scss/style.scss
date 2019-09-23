@@ -1,5 +1,8 @@
 // SCSS pour Hangman
-
+* {
+    margin: 0;
+    padding: 0;
+}
 /* Head */
 
 h1, h3 {
@@ -32,7 +35,7 @@ img {
     }
 }
 
-.letters {
+#letters {
     text-align: center;
 
     ul {
@@ -50,4 +53,10 @@ p {
 .playagain {
     text-align: center;
 
+}
+#word {
+    font-size: 50px;
+}
+button {
+    padding: 12px;
 }

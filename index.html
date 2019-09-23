@@ -16,63 +16,58 @@
 
     <main>
 
-        <img  id ="hangimg"src="assets/img/hang1.png" alt="Image of the hangman first live">
+        <img  id ="hangimg"src="assets/img/hang0.png" alt="Image of the hangman first live">
         <div class="word">
             <p>YOUR WORD :</p>
-            <ul>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-            </ul>
+            <div id="word">
+
+            </div>
         </div>
-        <p>CHOOSE A LETTER</p>
-        <div class="letters">
+        <p id="msg">CHOOSE A LETTER</p>
+        <div id="letters">
             <ul>
-                <li><button>A</button></li>
-                <li><button>B</button></li>
-                <li><button>C</button></li>
-                <li><button>D</button></li>
-                <li><button>E</button></li>
-                <li><button>F</button></li>
-                <li><button>G</button></li>
-                <li><button>H</button></li>
-                <li><button>I</button></li>
-                <li><button>J</button></li>
-                <li><button>K</button></li>
-                <li><button>L</button></li>
-                <li><button>M</button></li>
-                <li><button>N</button></li>
-                <li><button>O</button></li>
-                <li><button>P</button></li>
-                <li><button>Q</button></li>
-                <li><button>R</button></li>
-                <li><button>S</button></li>
-                <li><button>T</button></li>
-                <li><button>U</button></li>
-                <li><button>V</button></li>
-                <li><button>W</button></li>
-                <li><button>X</button></li>
-                <li><button>Y</button></li>
-                <li><button>Z</button></li>
+                <li><button id="a">A</button></li>
+                <li><button id="b">B</button></li>
+                <li><button id="c">C</button></li>
+                <li><button id="d">D</button></li>
+                <li><button id="e">E</button></li>
+                <li><button id="f">F</button></li>
+                <li><button id="g">G</button></li>
+                <li><button id="h">H</button></li>
+                <li><button id="i">I</button></li>
+                <li><button id="j">J</button></li>
+                <li><button id="k">K</button></li>
+                <li><button id="l">L</button></li>
+                <li><button id="m">M</button></li>
+                <li><button id="n">N</button></li>
+                <li><button id="o">O</button></li>
+                <li><button id="p">P</button></li>
+                <li><button id="q">Q</button></li>
+                <li><button id="r">R</button></li>
+                <li><button id="s">S</button></li>
+                <li><button id="t">T</button></li>
+                <li><button id="u">U</button></li>
+                <li><button id="v">V</button></li>
+                <li><button id="w">W</button></li>
+                <li><button id="x">X</button></li>
+                <li><button id="y">Y</button></li>
+                <li><button id="z">Z</button></li>
 
             </ul>
         </div>    
 
         <div>
-            <p>LIVES <span></span>/6</p>
+            <p>ATTEMPTS <span id="compt">0</span>/6</p>
         </div>
 
         <div class="playagain">
-            <a href="index.html"><button>PLAY AGAIN</button></a>
+            <button id="playAgain">PLAY AGAIN</button>
         </div>    
 
     </main>
     
 
 
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

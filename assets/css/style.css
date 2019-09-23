@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Head */
 h1, h3 {
   text-align: center;
@@ -29,11 +34,11 @@ img {
   padding-right: 1em;
 }
 
-.letters {
+#letters {
   text-align: center;
 }
 
-.letters ul li {
+#letters ul li {
   display: inline-block;
 }
 
@@ -43,5 +48,13 @@ p {
 
 .playagain {
   text-align: center;
+}
+
+#word {
+  font-size: 50px;
+}
+
+button {
+  padding: 12px;
 }
 /*# sourceMappingURL=style.css.map */
