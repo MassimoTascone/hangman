@@ -18,5 +18,36 @@ img {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 600px;
+    width: 500px;
+}
+.word {
+    text-align: center;
+    ul {
+        font-size: 50px;
+
+        li {
+            display: inline-block;
+            padding-right: 1em;
+        }
+    }
+}
+
+.letters {
+    text-align: center;
+
+    ul {
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+p {
+    text-align: center;
+
+}
+
+.playagain {
+    text-align: center;
+
 }
