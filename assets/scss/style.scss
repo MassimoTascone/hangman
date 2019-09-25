@@ -1,9 +1,15 @@
 // SCSS pour Hangman
 
+body {
+    font-family: 'Mansalva', cursive;
+
+}
+
 /* Head */
 
 h1, h3 {
     text-align: center;
+
 }
 
 h1 {
@@ -55,5 +61,23 @@ p {
     font-size: 50px;
 }
 button {
-    padding: 12px;
+    padding: 18px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 12px;
+    font-family: 'Mansalva', cursive;
+
+}
+button:hover {
+
+    padding: 18px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-size: 20px;
+    cursor: pointer;
+
 }
