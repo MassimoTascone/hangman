@@ -3,15 +3,17 @@
 const words = ["meeting" ,"holistic", "swim" , "toe" , "blood", "leg", "flap", "press" , "wardruna", "chang", "match", "ban" , "jellyfish", "historical", "julien", "mattis", "bitter", "becode", "potato"];
 let answerArray = [];
 let word;
-let compteur = 0;
+let compteur = 0; //Compteur pour attempt
 
-const checkLetter = (id) =>{ // fonction qui compare mon la valeur de mes boutons avec le mot random
+const checkLetter = (id) =>{ // fonction qui compare  la valeur de mes boutons avec le mot random
     console.log(id);
     let isletter = false;
     if(id == "playAgain"){
         Random();
         document.getElementById("letters").style.display = "block";
         document.getElementById("compt").innerText = compteur;
+        document.getElementById("yourWord").innerText = ("YOUR WORD :")
+        document.getElementById("msg").innerText = ("CHOOSE A LETTER");
 
 
         return
@@ -33,7 +35,7 @@ const checkLetter = (id) =>{ // fonction qui compare mon la valeur de mes bouton
     else {
         compteur++;
         document.getElementById("compt").innerText = compteur;
-        console.log("faux");
+        console.log("Wrong");
             document.getElementById("hangimg").setAttribute("src","assets/img/hang"+compteur+".png");
     }
 
@@ -41,6 +43,8 @@ const checkLetter = (id) =>{ // fonction qui compare mon la valeur de mes bouton
         console.log("game over");
         document.getElementById("letters").style.display = "none";
         document.getElementById("msg").innerText = ("Game Over");
+        document.getElementById("word").innerText = (word);
+        document.getElementById("yourWord").innerText = ("YOUR WORD WAS :");
     }
 }
 

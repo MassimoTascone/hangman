@@ -4,6 +4,11 @@ body {
     font-family: 'Mansalva', cursive;
 
 }
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
 
 /* Head */
 
@@ -81,3 +86,7 @@ button:hover {
     cursor: pointer;
 
 }
+
+/* Footer */
+
+
