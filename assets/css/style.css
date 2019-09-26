@@ -6,6 +6,9 @@ html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Head */
@@ -77,6 +80,18 @@ button:hover {
   border: 2px solid black;
   font-size: 20px;
   cursor: pointer;
+}
+
+button:disabled {
+  visibility: hidden;
+}
+
+.green {
+  color: #B6E563;
+}
+
+.red {
+  color: #d12626;
 }
 
 /* Footer */

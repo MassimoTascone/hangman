@@ -14,6 +14,11 @@ const checkLetter = (id) =>{ // fonction qui compare  la valeur de mes boutons a
         document.getElementById("compt").innerText = compteur;
         document.getElementById("yourWord").innerText = ("YOUR WORD :")
         document.getElementById("msg").innerText = ("CHOOSE A LETTER");
+        let buttons = document.querySelectorAll("button"); // recoit array 
+        buttons.forEach(button =>{
+            button.removeAttribute("disabled");
+        })
+        console.log(buttons);
 
 
         return
@@ -39,6 +44,17 @@ const checkLetter = (id) =>{ // fonction qui compare  la valeur de mes boutons a
             document.getElementById("hangimg").setAttribute("src","assets/img/hang"+compteur+".png");
             
     }
+    if (compteur <= 4){ // le compteur change de couleur 
+        document.getElementById("compt").classList.add('green');
+    }
+
+    else {
+    console.log("ca marche mec");
+    document.getElementById("compt").classList.add('red');
+
+        
+    }
+
 
     if (compteur == 6){
         console.log("game over");
@@ -47,6 +63,9 @@ const checkLetter = (id) =>{ // fonction qui compare  la valeur de mes boutons a
         document.getElementById("word").innerText = (word);
         document.getElementById("yourWord").innerText = ("YOUR WORD WAS :");
     }
+
+    document.getElementById(id).setAttribute("disabled", true);
+
 }
 
 
@@ -75,6 +94,8 @@ const Random =() => { // Fonction qui genere mot random
             () => (checkLetter(btn.id), false),
         ),
     );
+
+
 
 
 })();

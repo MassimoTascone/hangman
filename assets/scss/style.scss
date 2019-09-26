@@ -1,5 +1,10 @@
 // SCSS pour Hangman
 
+// Variables colors
+
+$green: #B6E563;
+$red: rgb(209, 38, 38);
+
 body {
     font-family: 'Mansalva', cursive;
 
@@ -7,7 +12,10 @@ body {
 html, body {
     margin: 0; 
     height: 100%; 
-    overflow: hidden
+    overflow: hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
 }
 
 /* Head */
@@ -86,7 +94,17 @@ button:hover {
     cursor: pointer;
 
 }
+button:disabled {
+    visibility: hidden;
+}
 
+
+.green {
+    color: $green;
+}
+.red {
+    color: $red;
+}
 /* Footer */
 
 footer {
