@@ -37,6 +37,7 @@ const checkLetter = (id) =>{ // fonction qui compare  la valeur de mes boutons a
         document.getElementById("compt").innerText = compteur;
         console.log("Wrong");
             document.getElementById("hangimg").setAttribute("src","assets/img/hang"+compteur+".png");
+            
     }
 
     if (compteur == 6){
@@ -74,10 +75,6 @@ const Random =() => { // Fonction qui genere mot random
             () => (checkLetter(btn.id), false),
         ),
     );
-
-
-
-
 
 
 })();

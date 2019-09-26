@@ -80,4 +80,9 @@ button:hover {
 }
 
 /* Footer */
+footer {
+  margin-left: 10px;
+  position: absolute;
+  bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
