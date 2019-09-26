@@ -14,11 +14,12 @@ const checkLetter = (id) =>{ // fonction qui compare  la valeur de mes boutons a
         document.getElementById("compt").innerText = compteur;
         document.getElementById("yourWord").innerText = ("YOUR WORD :")
         document.getElementById("msg").innerText = ("CHOOSE A LETTER");
+        document.getElementById("compt").classList.remove('red');
+        
         let buttons = document.querySelectorAll("button"); // recoit array 
         buttons.forEach(button =>{
             button.removeAttribute("disabled");
-        })
-        console.log(buttons);
+        });
 
 
         return
@@ -50,6 +51,7 @@ const checkLetter = (id) =>{ // fonction qui compare  la valeur de mes boutons a
 
     else {
     console.log("ca marche mec");
+    document.getElementById("compt").classList.remove('green');
     document.getElementById("compt").classList.add('red');
 
         
