@@ -1,2 +1,2 @@
-# hangman
-Recreating the hangman game with Javascript.
+# Hangman with Javascript
+![Screenshot of the page](https://imgur.com/YyEneTU)
