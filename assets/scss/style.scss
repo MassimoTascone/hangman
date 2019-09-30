@@ -10,8 +10,7 @@ body {
 
 }
 html, body {
-    margin: 0; 
-    height: 100%; 
+    height: 90vh; 
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -26,6 +25,7 @@ h1, h3 {
 
 h1 {
     font-size: 60px;
+    margin-top: 10px;
 }
 
 
@@ -39,7 +39,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 500px;
+    width: 25vw;
 }
 .word {
     text-align: center;
@@ -111,8 +111,7 @@ button:disabled {
 
 footer {
     margin-left: 10px;
-    position: absolute;
-    bottom: 0;
+
 }
 
 
